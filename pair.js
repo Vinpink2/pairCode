@@ -58,7 +58,7 @@ router.get('/', async (req, res) => {
                         const b64data = Buffer.from(data).toString('base64');
                         const session = await client.sendMessage(client.user.id, { text: 'Ultra-X:~' + b64data });
                         await client.sendMessage(client.user.id, {
-                            text: "```⚡ JuneX Ultra has been linked to your WhatsApp account!\n\nDo NOT share this session_id with anyone.\n\nCopy and paste it on the SESSION string during deploy — it will be used for authentication.\n\nFor any issues, reach us via:\nhttps://wa.me/message/YNDA2RFTE35LB1\n\nDon't forget to sleep 😴, for even the relentless must recharge ⚡.\n\nGoodluck 🎉 — JuneX Ultra```"
+                            text: "```⚡ JuneX Ultra has been linked to your WhatsApp account!\n\nDo NOT share this session_id with anyone.\n\nCopy and paste it on the SESSION string during deploy — it will be used for authentication.\n\nFor any issues, reach us via:\nhttps://wa.me/message/254798952773\n\nDon't forget to sleep 😴, for even the relentless must recharge ⚡.\n\nGoodluck 🎉 — JuneX Ultra```"
                         }, { quoted: session });
                         await delay(500);
                         await client.ws.close();
