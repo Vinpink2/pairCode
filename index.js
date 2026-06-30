@@ -12,6 +12,9 @@ app.use('/code', code);
 app.use('/pair',async (req, res, next) => {
 res.sendFile(__path + '/pair.html')
 })
+app.use('/ping', (req, res) => {
+    res.send('alive');
+})
 app.use('/',async (req, res, next) => {
 res.sendFile(__path + '/main.html')
 })
